@@ -1,0 +1,27 @@
+PATH
+  remote: .
+  specs:
+    groupdocs_storage_sdk (18.4)
+      faraday (~> 0.14.0)
+      mimemagic (~> 0.3.2)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    faraday (0.14.0)
+    multipart-post (>= 1.2, < 3)
+    mimemagic (0.3.2)
+    minitest (5.11.3)
+    multipart-post (2.0.0)
+    rake (12.0.0)
+
+PLATFORMS
+  x86-mingw32
+
+DEPENDENCIES
+  groupdocs_storage_sdk!
+  minitest (~> 5.11, >= 5.11.3)
+  rake (~> 12.0.0)
+
+BUNDLED WITH
+   1.16.1
