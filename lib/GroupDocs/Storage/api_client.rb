@@ -33,7 +33,7 @@ require 'mimemagic'
 require_relative 'version'
 require_relative 'api_error'
 
-module GroupDocsStorageSdk
+module GroupDocsStorageCloud
   #
   # api client is mainly responsible for making the HTTP call to the API backend.
   # 
@@ -53,7 +53,7 @@ module GroupDocsStorageSdk
       @default_headers = {
         'Content-Type' => "application/json",
         'x-groupdocs-client' => "ruby sdk",
-        'x-groupdocs-version' => "#{ GroupDocsStorageSdk::VERSION }"
+        'x-groupdocs-version' => "#{ GroupDocsStorageCloud::VERSION }"
       }
     end
 
@@ -231,7 +231,7 @@ module GroupDocsStorageSdk
         end
       else
         # models, e.g. Pet
-        GroupDocsStorageSdk.const_get(return_type).new.tap do |model|
+        GroupDocsStorageCloud.const_get(return_type).new.tap do |model|
           model.build_from_hash data
         end
       end
@@ -261,7 +261,7 @@ module GroupDocsStorageSdk
       tempfile.write(response.body)
       response.on_complete do |resp|
         tempfile.close
-        #@config.logger.info "Temp file written to #{tempfile.path}, please copy the file to a proper folder "\
+        @config.logger.info "Temp file written to #{tempfile.path}, please copy the file to a proper folder "\
                             "with e.g. `FileUtils.cp(tempfile.path, '/new/file/path')` otherwise the temp file "\
                             "will be deleted automatically with GC. It's also recommended to delete the temp file "\
                             "explicitly with `tempfile.delete`"

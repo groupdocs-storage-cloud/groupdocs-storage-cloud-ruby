@@ -24,6 +24,6 @@
  # </summary>
  # --------------------------------------------------------------------------------------------------------------------
  #
-module GroupDocsStorageSdk
-  VERSION = "18.4"
+module GroupDocsStorageCloud
+  VERSION = "18.5"
 end

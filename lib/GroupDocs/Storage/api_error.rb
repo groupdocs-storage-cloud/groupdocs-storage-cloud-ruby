@@ -23,7 +23,7 @@
  # </summary>
  # --------------------------------------------------------------------------------------------------------------------
 
-module GroupDocsStorageSdk
+module GroupDocsStorageCloud
   #
   # ApiError class for error handling
   #

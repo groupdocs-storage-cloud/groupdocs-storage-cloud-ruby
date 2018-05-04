@@ -25,7 +25,7 @@
  # --------------------------------------------------------------------------------------------------------------------
  #
 
-module GroupDocsStorageSdk
+module GroupDocsStorageCloud
 
  #
  # Request model for PostMoveFolder operation.

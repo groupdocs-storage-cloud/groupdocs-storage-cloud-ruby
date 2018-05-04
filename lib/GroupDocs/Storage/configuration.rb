@@ -25,7 +25,7 @@
 
 require 'uri'
 
-module GroupDocsStorageSdk
+module GroupDocsStorageCloud
   #
   # Class for storing API configuration info
   #

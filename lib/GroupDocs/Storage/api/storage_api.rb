@@ -25,7 +25,7 @@
 
 require 'uri'
 
-module GroupDocsStorageSdk
+module GroupDocsStorageCloud
   #
   # GroupDocs.Storage for Cloud API
   #

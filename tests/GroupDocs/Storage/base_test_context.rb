@@ -25,12 +25,12 @@
 # --------------------------------------------------------------------------------------------------------------------
 #
 
-module GroupDocsStorageSdk
+module GroupDocsStorageCloud
 require "minitest/autorun"
 require "minitest/unit"
 require 'json'
 require 'io/console'
-require_relative '../../../lib/group_docs_storage_sdk'
+require_relative '../../../lib/groupdocs_storage_cloud'
 class BaseTestContext < Minitest::Test
   include MiniTest::Assertions
   def setup
@@ -39,7 +39,7 @@ class BaseTestContext < Minitest::Test
     data_hash = JSON.parse($contents)
     #TODO: Get your AppSID and AppKey at https://dashboard.groupdocs.cloud
     #     (free registration is required).
-    GroupDocsStorageSdk.configure do |config|
+    GroupDocsStorageCloud.configure do |config|
       config.api_key['api_key'] = data_hash['AppKey']
       config.api_key['app_sid'] = data_hash['AppSID']
     end

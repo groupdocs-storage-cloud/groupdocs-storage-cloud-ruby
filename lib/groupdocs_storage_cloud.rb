@@ -1,5 +1,5 @@
 # ------------------------------------------------------------------------------------
-# <copyright company="Aspose Pty Ltd" file="groupdocs_storage_sdk.rb">
+# <copyright company="Aspose Pty Ltd" file="groupdocs_storage_cloud.rb">
 #   Copyright (c) 2018 GroupDocs.Storage for Cloud
 # </copyright>
 # <summary>
@@ -51,11 +51,11 @@ require_relative '../lib/GroupDocs/Storage/models/upload_response'
 # APIs
 require_relative '../lib/GroupDocs/Storage/api/storage_api'
 
-module GroupDocsStorageSdk
+module GroupDocsStorageCloud
   # Main module
   class << self
     # Configure sdk using block.
-    # GroupDocsStorageSdk.configure do |config|
+    # GroupDocsStorageCloud.configure do |config|
     #   config.username = "xxx"
     #   config.password = "xxx"
     # end

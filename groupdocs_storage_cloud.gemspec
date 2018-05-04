@@ -3,8 +3,8 @@ $:.push File.expand_path("../lib/GroupDocs/Storage", __FILE__)
 require File.expand_path("../lib/GroupDocs/Storage/version.rb", __FILE__)
 
 Gem::Specification.new do |s|
-  s.name        = "groupdocs_storage_sdk"
-  s.version     = GroupDocsStorageSdk::VERSION
+  s.name        = 'groupdocs_storage_cloud'
+  s.version     = GroupDocsStorageCloud::VERSION
   s.platform    = Gem::Platform::RUBY
   s.authors     = 'GroupDocs'
   s.homepage    = 'https://github.com/groupdocs-storage-cloud/groupdocs-storage-cloud-ruby'

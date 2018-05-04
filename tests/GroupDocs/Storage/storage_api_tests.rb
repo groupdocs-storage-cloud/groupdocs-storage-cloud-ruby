@@ -24,7 +24,7 @@
 # --------------------------------------------------------------------------------------------------------------------
 #
 
-module GroupDocsStorageSdk
+module GroupDocsStorageCloud
   require_relative 'base_test_context'
   class StorageApiTests < BaseTestContext
 

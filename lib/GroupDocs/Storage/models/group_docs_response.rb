@@ -1,7 +1,7 @@
 
 require 'date'
 
-module GroupDocsStorageSdk
+module GroupDocsStorageCloud
 #
  # --------------------------------------------------------------------------------------------------------------------
  # <copyright company="Aspose Pty Ltd" file="GroupDocsResponse.rb">
@@ -167,7 +167,7 @@ module GroupDocsStorageSdk
           end
         end
       else # model
-        temp_model = GroupDocsStorageSdk.const_get(type).new
+        temp_model = GroupDocsStorageCloud.const_get(type).new
         temp_model.build_from_hash(value)
       end
     end
