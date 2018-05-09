@@ -69,17 +69,9 @@ module GroupDocsStorageCloud
       # query parameters
       query_params = {}
       query_params[downcase_first_letter('path')] = request.path
-
-      if local_var_path.include? downcase_first_letter('versionId')
-        local_var_path = local_var_path.sub('{' + downcase_first_letter('versionId') + '}', request.version_id.to_s)
-      else
-        query_params[downcase_first_letter('versionId')] = request.version_id unless request.version_id.nil?
-      end
-      if local_var_path.include? downcase_first_letter('storage')
-        local_var_path = local_var_path.sub('{' + downcase_first_letter('storage') + '}', request.storage.to_s)
-      else
-        query_params[downcase_first_letter('storage')] = request.storage unless request.storage.nil?
-      end
+      query_params[downcase_first_letter('path')] = request.path unless request.path.nil?
+      query_params[downcase_first_letter('versionId')] = request.version_id unless request.version_id.nil?
+      query_params[downcase_first_letter('storage')] = request.storage unless request.storage.nil?
 
       # header parameters
       header_params = {}
@@ -141,17 +133,9 @@ module GroupDocsStorageCloud
       # query parameters
       query_params = {}
       query_params[downcase_first_letter('path')] = request.path
-
-      if local_var_path.include? downcase_first_letter('storage')
-        local_var_path = local_var_path.sub('{' + downcase_first_letter('storage') + '}', request.storage.to_s)
-      else
-        query_params[downcase_first_letter('storage')] = request.storage unless request.storage.nil?
-      end
-      if local_var_path.include? downcase_first_letter('recursive')
-        local_var_path = local_var_path.sub('{' + downcase_first_letter('recursive') + '}', request.recursive.to_s)
-      else
-        query_params[downcase_first_letter('recursive')] = request.recursive unless request.recursive.nil?
-      end
+      query_params[downcase_first_letter('path')] = request.path unless request.path.nil?
+      query_params[downcase_first_letter('storage')] = request.storage unless request.storage.nil?
+      query_params[downcase_first_letter('recursive')] = request.recursive unless request.recursive.nil?
 
       # header parameters
       header_params = {}
@@ -208,11 +192,7 @@ module GroupDocsStorageCloud
 
       # query parameters
       query_params = {}
-      if local_var_path.include? downcase_first_letter('storage')
-        local_var_path = local_var_path.sub('{' + downcase_first_letter('storage') + '}', request.storage.to_s)
-      else
-        query_params[downcase_first_letter('storage')] = request.storage unless request.storage.nil?
-      end
+      query_params[downcase_first_letter('storage')] = request.storage unless request.storage.nil?
 
       # header parameters
       header_params = {}
@@ -274,17 +254,9 @@ module GroupDocsStorageCloud
       # query parameters
       query_params = {}
       query_params[downcase_first_letter('path')] = request.path
-
-      if local_var_path.include? downcase_first_letter('versionId')
-        local_var_path = local_var_path.sub('{' + downcase_first_letter('versionId') + '}', request.version_id.to_s)
-      else
-        query_params[downcase_first_letter('versionId')] = request.version_id unless request.version_id.nil?
-      end
-      if local_var_path.include? downcase_first_letter('storage')
-        local_var_path = local_var_path.sub('{' + downcase_first_letter('storage') + '}', request.storage.to_s)
-      else
-        query_params[downcase_first_letter('storage')] = request.storage unless request.storage.nil?
-      end
+      query_params[downcase_first_letter('path')] = request.path unless request.path.nil?
+      query_params[downcase_first_letter('versionId')] = request.version_id unless request.version_id.nil?
+      query_params[downcase_first_letter('storage')] = request.storage unless request.storage.nil?
 
       # header parameters
       header_params = {}
@@ -346,17 +318,9 @@ module GroupDocsStorageCloud
       # query parameters
       query_params = {}
       query_params[downcase_first_letter('path')] = request.path
-
-      if local_var_path.include? downcase_first_letter('versionId')
-        local_var_path = local_var_path.sub('{' + downcase_first_letter('versionId') + '}', request.version_id.to_s)
-      else
-        query_params[downcase_first_letter('versionId')] = request.version_id unless request.version_id.nil?
-      end
-      if local_var_path.include? downcase_first_letter('storage')
-        local_var_path = local_var_path.sub('{' + downcase_first_letter('storage') + '}', request.storage.to_s)
-      else
-        query_params[downcase_first_letter('storage')] = request.storage unless request.storage.nil?
-      end
+      query_params[downcase_first_letter('path')] = request.path unless request.path.nil?
+      query_params[downcase_first_letter('versionId')] = request.version_id unless request.version_id.nil?
+      query_params[downcase_first_letter('storage')] = request.storage unless request.storage.nil?
 
       # header parameters
       header_params = {}
@@ -479,12 +443,8 @@ module GroupDocsStorageCloud
       # query parameters
       query_params = {}
       query_params[downcase_first_letter('path')] = request.path
-
-      if local_var_path.include? downcase_first_letter('storage')
-        local_var_path = local_var_path.sub('{' + downcase_first_letter('storage') + '}', request.storage.to_s)
-      else
-        query_params[downcase_first_letter('storage')] = request.storage unless request.storage.nil?
-      end
+      query_params[downcase_first_letter('path')] = request.path unless request.path.nil?
+      query_params[downcase_first_letter('storage')] = request.storage unless request.storage.nil?
 
       # header parameters
       header_params = {}
@@ -541,16 +501,8 @@ module GroupDocsStorageCloud
 
       # query parameters
       query_params = {}
-      if local_var_path.include? downcase_first_letter('path')
-        local_var_path = local_var_path.sub('{' + downcase_first_letter('path') + '}', request.path.to_s)
-      else
-        query_params[downcase_first_letter('path')] = request.path unless request.path.nil?
-      end
-      if local_var_path.include? downcase_first_letter('storage')
-        local_var_path = local_var_path.sub('{' + downcase_first_letter('storage') + '}', request.storage.to_s)
-      else
-        query_params[downcase_first_letter('storage')] = request.storage unless request.storage.nil?
-      end
+      query_params[downcase_first_letter('path')] = request.path unless request.path.nil?
+      query_params[downcase_first_letter('storage')] = request.storage unless request.storage.nil?
 
       # header parameters
       header_params = {}
@@ -617,23 +569,11 @@ module GroupDocsStorageCloud
       query_params = {}
       query_params[downcase_first_letter('src')] = request.src
       query_params[downcase_first_letter('dest')] = request.dest
-
-
-      if local_var_path.include? downcase_first_letter('versionId')
-        local_var_path = local_var_path.sub('{' + downcase_first_letter('versionId') + '}', request.version_id.to_s)
-      else
-        query_params[downcase_first_letter('versionId')] = request.version_id unless request.version_id.nil?
-      end
-      if local_var_path.include? downcase_first_letter('storage')
-        local_var_path = local_var_path.sub('{' + downcase_first_letter('storage') + '}', request.storage.to_s)
-      else
-        query_params[downcase_first_letter('storage')] = request.storage unless request.storage.nil?
-      end
-      if local_var_path.include? downcase_first_letter('destStorage')
-        local_var_path = local_var_path.sub('{' + downcase_first_letter('destStorage') + '}', request.dest_storage.to_s)
-      else
-        query_params[downcase_first_letter('destStorage')] = request.dest_storage unless request.dest_storage.nil?
-      end
+      query_params[downcase_first_letter('src')] = request.src unless request.src.nil?
+      query_params[downcase_first_letter('dest')] = request.dest unless request.dest.nil?
+      query_params[downcase_first_letter('versionId')] = request.version_id unless request.version_id.nil?
+      query_params[downcase_first_letter('storage')] = request.storage unless request.storage.nil?
+      query_params[downcase_first_letter('destStorage')] = request.dest_storage unless request.dest_storage.nil?
 
       # header parameters
       header_params = {}
@@ -700,18 +640,10 @@ module GroupDocsStorageCloud
       query_params = {}
       query_params[downcase_first_letter('src')] = request.src
       query_params[downcase_first_letter('dest')] = request.dest
-
-
-      if local_var_path.include? downcase_first_letter('storage')
-        local_var_path = local_var_path.sub('{' + downcase_first_letter('storage') + '}', request.storage.to_s)
-      else
-        query_params[downcase_first_letter('storage')] = request.storage unless request.storage.nil?
-      end
-      if local_var_path.include? downcase_first_letter('destStorage')
-        local_var_path = local_var_path.sub('{' + downcase_first_letter('destStorage') + '}', request.dest_storage.to_s)
-      else
-        query_params[downcase_first_letter('destStorage')] = request.dest_storage unless request.dest_storage.nil?
-      end
+      query_params[downcase_first_letter('src')] = request.src unless request.src.nil?
+      query_params[downcase_first_letter('dest')] = request.dest unless request.dest.nil?
+      query_params[downcase_first_letter('storage')] = request.storage unless request.storage.nil?
+      query_params[downcase_first_letter('destStorage')] = request.dest_storage unless request.dest_storage.nil?
 
       # header parameters
       header_params = {}
@@ -780,21 +712,10 @@ module GroupDocsStorageCloud
       query_params[downcase_first_letter('newdest')] = request.newdest
 
 
-      if local_var_path.include? downcase_first_letter('versionId')
-        local_var_path = local_var_path.sub('{' + downcase_first_letter('versionId') + '}', request.version_id.to_s)
-      else
-        query_params[downcase_first_letter('versionId')] = request.version_id unless request.version_id.nil?
-      end
-      if local_var_path.include? downcase_first_letter('storage')
-        local_var_path = local_var_path.sub('{' + downcase_first_letter('storage') + '}', request.storage.to_s)
-      else
-        query_params[downcase_first_letter('storage')] = request.storage unless request.storage.nil?
-      end
-      if local_var_path.include? downcase_first_letter('destStorage')
-        local_var_path = local_var_path.sub('{' + downcase_first_letter('destStorage') + '}', request.dest_storage.to_s)
-      else
-        query_params[downcase_first_letter('destStorage')] = request.dest_storage unless request.dest_storage.nil?
-      end
+
+      query_params[downcase_first_letter('versionId')] = request.version_id unless request.version_id.nil?
+      query_params[downcase_first_letter('storage')] = request.storage unless request.storage.nil?
+      query_params[downcase_first_letter('destStorage')] = request.dest_storage unless request.dest_storage.nil?
 
       # header parameters
       header_params = {}
@@ -861,18 +782,10 @@ module GroupDocsStorageCloud
       query_params = {}
       query_params[downcase_first_letter('path')] = request.path
       query_params[downcase_first_letter('newdest')] = request.newdest
-
-
-      if local_var_path.include? downcase_first_letter('storage')
-        local_var_path = local_var_path.sub('{' + downcase_first_letter('storage') + '}', request.storage.to_s)
-      else
-        query_params[downcase_first_letter('storage')] = request.storage unless request.storage.nil?
-      end
-      if local_var_path.include? downcase_first_letter('destStorage')
-        local_var_path = local_var_path.sub('{' + downcase_first_letter('destStorage') + '}', request.dest_storage.to_s)
-      else
-        query_params[downcase_first_letter('destStorage')] = request.dest_storage unless request.dest_storage.nil?
-      end
+      query_params[downcase_first_letter('path')] = request.path unless request.path.nil?
+      query_params[downcase_first_letter('newdest')] = request.newdest unless request.newdest.nil?
+      query_params[downcase_first_letter('storage')] = request.storage unless request.storage.nil?
+      query_params[downcase_first_letter('destStorage')] = request.dest_storage unless request.dest_storage.nil?
 
       # header parameters
       header_params = {}
@@ -935,16 +848,9 @@ module GroupDocsStorageCloud
       query_params = {}
       query_params[downcase_first_letter('path')] = request.path
 
-      if local_var_path.include? downcase_first_letter('storage')
-        local_var_path = local_var_path.sub('{' + downcase_first_letter('storage') + '}', request.storage.to_s)
-      else
-        query_params[downcase_first_letter('storage')] = request.storage unless request.storage.nil?
-      end
-      if local_var_path.include? downcase_first_letter('destStorage')
-        local_var_path = local_var_path.sub('{' + downcase_first_letter('destStorage') + '}', request.dest_storage.to_s)
-      else
-        query_params[downcase_first_letter('destStorage')] = request.dest_storage unless request.dest_storage.nil?
-      end
+
+      query_params[downcase_first_letter('storage')] = request.storage unless request.storage.nil?
+      query_params[downcase_first_letter('destStorage')] = request.dest_storage unless request.dest_storage.nil?
 
       # header parameters
       header_params = {}
@@ -1010,17 +916,9 @@ module GroupDocsStorageCloud
       # query parameters
       query_params = {}
       query_params[downcase_first_letter('path')] = request.path
-
-      if local_var_path.include? downcase_first_letter('versionId')
-        local_var_path = local_var_path.sub('{' + downcase_first_letter('versionId') + '}', request.version_id.to_s)
-      else
-        query_params[downcase_first_letter('versionId')] = request.version_id unless request.version_id.nil?
-      end
-      if local_var_path.include? downcase_first_letter('storage')
-        local_var_path = local_var_path.sub('{' + downcase_first_letter('storage') + '}', request.storage.to_s)
-      else
-        query_params[downcase_first_letter('storage')] = request.storage unless request.storage.nil?
-      end
+      query_params[downcase_first_letter('path')] = request.path unless request.path.nil?
+      query_params[downcase_first_letter('versionId')] = request.version_id unless request.version_id.nil?
+      query_params[downcase_first_letter('storage')] = request.storage unless request.storage.nil?
 
       # header parameters
       header_params = {}
