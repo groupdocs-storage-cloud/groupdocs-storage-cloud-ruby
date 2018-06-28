@@ -1,6 +1,3 @@
-
-require 'date'
-
 module GroupDocsStorageCloud
 #
  # --------------------------------------------------------------------------------------------------------------------
@@ -148,9 +145,9 @@ module GroupDocsStorageCloud
     def _deserialize(type, value)
       case type.to_sym
       when :DateTime
-        Time.at(/\d/.match(value)[0].to_f).to_datetime
+        DateTime.parse value
       when :Date
-        Time.at(/\d/.match(value)[0].to_f).to_date
+        Date.parse value
       when :String
         value.to_s
       when :Integer

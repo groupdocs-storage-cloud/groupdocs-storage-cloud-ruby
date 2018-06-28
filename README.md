@@ -2,11 +2,11 @@ This repository contains GroupDocs.Storage Cloud SDK for Ruby source code. This 
 See [API Reference](https://apireference.groupdocs.cloud/storage/) for full API specification.
 
 ## How to use the SDK?
-The complete source code is available in this repository folder. You can either directly use it in your project via source code or get [RubyGem distribution]() (recommended). For more details, please visit our [documentation website](https://docs.groupdocs.cloud/display/storagecloud/Available+SDKs).
+The complete source code is available in this repository folder. You can either directly use it in your project via source code or get [RubyGem distribution](https://rubygems.org/gems/groupdocs_storage_cloud) (recommended). For more details, please visit our [documentation website](https://docs.groupdocs.cloud/display/storagecloud/Available+SDKs).
 
 ### Prerequisites
 
-To use GroupDocs Storage for Cloud Ruby SDK you need to register an account with [GroupDocs Cloud](https://www.groupdocs.cloud/) and lookup/create App Key and SID at [Cloud Dashboard](https://dashboard.groupdocs.cloud/#/apps). There is free quota available.
+To use GroupDocs Storage for Cloud Ruby SDK you need to register an account with [GroupDocs Cloud](https://www.groupdocs.cloud/) and lookup/create App Key and SID at [Cloud Dashboard](https://dashboard.groupdocs.cloud/#/apps). There is free quota available. For more details, see [GroupDocs Cloud Pricing](https://purchase.groupdocs.cloud/pricing).
 
 ### Installation
 
@@ -18,9 +18,9 @@ To use GroupDocs Storage for Cloud Ruby SDK you need to register an account with
 @config.api_key['app_sid'] = ''
 @api_client = ApiClient.new @config
 @storage_api = StorageApi.new @api_client
-$path = "folder/FileTest.pdf"
+$path = 'folder/FileTest.pdf'
 $versionId = nil
-$storage = "StorageName"
+$storage = 'StorageName'
 $request = GetDownloadRequest.new($path, $versionId, $storage)
 $result = @storage_api.get_download($request)
 ```

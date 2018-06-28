@@ -112,7 +112,7 @@ module GroupDocsStorageCloud
 	
     def initialize
       @scheme = 'https'
-      @host = "api.groupdocs.cloud"
+      @host = 'api.groupdocs.cloud'
       @api_version = V1_API_VERSION
       @api_key = {}
       @api_key_prefix = {}
