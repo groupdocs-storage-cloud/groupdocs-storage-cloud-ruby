@@ -20,7 +20,7 @@ To use GroupDocs Storage for Cloud Ruby SDK you need to register an account with
 	gem install groupdocs_storage_cloud
 
 ### Sample usage
-The example below shows how your application has to initiate and download a file using groupdocs_storage_cloud library:
+The example below shows how your application has to initiate and download a file using groupdocs_storage_cloud package:
 ```ruby
 @config = Configuration.new
 @config.api_key['api_key'] = '' # Put your's api_key and app_sid
